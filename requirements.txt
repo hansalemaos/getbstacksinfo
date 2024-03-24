@@ -1,5 +1,8 @@
 ctypes_window_info
 list_all_files_recursively
 nodepsutils
+pidconnectioninfos
+regex
+regex4numbers
 reggisearch
 tkkillablethreads

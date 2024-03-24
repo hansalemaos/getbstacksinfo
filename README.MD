@@ -133,3 +133,224 @@ r""" 'Rvc64_39': {'adbport': '5945',
               'workingfolder': 'C:\\PROGRA~3\\BLUEST~2\\Engine\\Rvc64_39'}}"""
 
 ```
+
+
+```py
+from getbstacksinfo.lookup2 import (
+    get_offline_and_online_bluestacks_instances,
+    get_all_bluestacks_online_instances,
+    create_port_pid_lookup,
+    get_real_adb,
+)
+
+
+a1 = get_real_adb(adbexe="adb.exe")
+print(a1)
+
+
+a2 = create_port_pid_lookup()
+print(a2)
+
+a3 = get_all_bluestacks_online_instances(adbexe="adb.exe")
+print(a3)
+
+a4 = get_offline_and_online_bluestacks_instances(adbexe="adb.exe")
+print(a4)
+
+("adb.exe", 19508)
+(
+    {
+        5416: {0, 22},
+        ...: ...,
+        6112: {"UDP"},
+        55575: {"UDP"},
+        55576: {"UDP"},
+        55577: {"UDP"},
+        55574: {"UDP"},
+    },
+)
+{
+    "Rvc64_24": {
+        "port": 5795,
+        "cmdline": '"C:\\\\Program Files\\\\BlueStacks_nxt\\\\HD-Player.exe" "--instance" "Rvc64_24"',
+        "exefile": "HD-Player.exe",
+        "pid": 4472,
+        "running": True,
+        "connected": True,
+        "locking_pids": [],
+    },
+    "Rvc64_26": {
+        "port": 5815,
+        "cmdline": '"C:\\\\Program Files\\\\BlueStacks_nxt\\\\HD-Player.exe" "--instance" "Rvc64_26"',
+        "exefile": "HD-Player.exe",
+        "pid": 19620,
+        "running": True,
+        "connected": True,
+        "locking_pids": [],
+    },
+    "Rvc64_27": {
+        "port": 5825,
+        "cmdline": '"C:\\\\Program Files\\\\BlueStacks_nxt\\\\HD-Player.exe" "--instance" "Rvc64_27"',
+        "exefile": "HD-Player.exe",
+        "pid": 1104,
+        "running": True,
+        "connected": True,
+        "locking_pids": [],
+    },
+}
+{
+    "Rvc64_24": {
+        "port": 5795,
+        "cmdline": '"C:\\\\Program Files\\\\BlueStacks_nxt\\\\HD-Player.exe" "--instance" "Rvc64_24"',
+        "exefile": "HD-Player.exe",
+        "pid": 4472,
+        "running": True,
+        "connected": True,
+        "locking_pids": [],
+    },
+    "Rvc64_26": {
+        "port": 5815,
+        "cmdline": '"C:\\\\Program Files\\\\BlueStacks_nxt\\\\HD-Player.exe" "--instance" "Rvc64_26"',
+        "exefile": "HD-Player.exe",
+        "pid": 19620,
+        "running": True,
+        "connected": True,
+        "locking_pids": [],
+    },
+    "Rvc64_27": {
+        "port": 5825,
+        "cmdline": '"C:\\\\Program Files\\\\BlueStacks_nxt\\\\HD-Player.exe" "--instance" "Rvc64_27"',
+        "exefile": "HD-Player.exe",
+        "pid": 1104,
+        "running": True,
+        "connected": True,
+        "locking_pids": [],
+    },
+    "Rvc64": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+    "Rvc64_25": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_25",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_25',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+    "Rvc64_28": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_28",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_28',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [10056],
+    },
+    "Rvc64_29": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_29",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_29',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [27616],
+    },
+    "Rvc64_30": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_30",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_30',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+    "Rvc64_31": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_31",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_31',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+    "Rvc64_32": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_32",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_32',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+    "Rvc64_33": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_33",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_33',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+    "Rvc64_34": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_34",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_34',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+    "Rvc64_35": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_35",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_35',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+    "Rvc64_36": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_36",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_36',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+    "Rvc64_37": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_37",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_37',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+    "Rvc64_38": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_38",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_38',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+    "Rvc64_39": {
+        "port": -1,
+        "cmdline": "C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_39",
+        "exefile": 'startcommand = rf\'start /min "" C:\\PROGRA~1\\BLUEST~2\\HD-PLA~1.EXE --instance Rvc64_39',
+        "pid": -1,
+        "running": False,
+        "connected": False,
+        "locking_pids": [],
+    },
+}
+```
